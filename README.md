@@ -17,7 +17,7 @@ playerprefsLib.playerprefs(STRING_KEY).getstring() #returns key string value
 #save int 
 playerprefsLib.playerprefs(STRING_KEY).saveint(INTEGER_VARIABLE)
 #get int
-playerprefsLib.playerprefs(STRING_KEY).getint()
+playerprefsLib.playerprefs(STRING_KEY).getint() #returns key integer value
 ```
 
 ## Contributing
