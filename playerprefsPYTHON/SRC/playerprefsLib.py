@@ -26,6 +26,31 @@ class playerprefs:
             a = name[self.code]
         return a
 
+    def savefloat(self, floatvalue:float):
+        bumba = '"'
+        hoba = "{"
+        hobas = "}"
+        file = open(self.code+"prefs"+".json", "w")
+        text = f"""
+{hoba}
+    {bumba}playerprefs{bumba}: [
+        {hoba}
+            {bumba}{self.code}{bumba}: {floatvalue}
+        {hobas}
+    ]
+{hobas}
+        """
+        file.write(text)
+        file.close()
+    def getfloat(self):
+        with open(self.code+"prefs"+".json",) as f:
+            data = json.load(f)
+        a = 0.0
+        for name in data["playerprefs"]:
+            a = name[self.code]
+        return a
+
+
     def savestring(self, stringvalue:str):
         bumba = '"'
         hoba = "{"
