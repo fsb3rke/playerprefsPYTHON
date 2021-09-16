@@ -25,6 +25,13 @@ playerprefsLib.playerprefs(STRING_KEY).getstring() #returns key string value
 playerprefsLib.playerprefs(STRING_KEY).saveint(INTEGER_VARIABLE)
 #get int
 playerprefsLib.playerprefs(STRING_KEY).getint() #returns key integer value
+
+#bool
+
+#save bool 
+playerprefsLib.playerprefs(STRING_KEY).savebool(BOOLEAN_VARIABLE)
+#get bool
+playerprefsLib.playerprefs(STRING_KEY).getbool() #returns key boolean value
 ```
 
 ## Contributing
