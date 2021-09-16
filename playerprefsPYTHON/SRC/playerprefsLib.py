@@ -7,7 +7,7 @@ class playerprefs:
         hoba = "{"
         hobas = "}"
         file = open(self.code+"prefs"+".json", "w")
-        file.write(f"""
+        text = f"""
 {hoba}
     {bumba}playerprefs{bumba}: [
         {hoba}
@@ -15,7 +15,8 @@ class playerprefs:
         {hobas}
     ]
 {hobas}
-        """)
+        """
+        file.write(text)
         file.close()
     def getint(self):
         with open(self.code+"prefs"+".json",) as f:
@@ -30,7 +31,7 @@ class playerprefs:
         hoba = "{"
         hobas = "}"
         file = open(self.code+"prefs"+".json", "w")
-        file.write(f"""
+        text = f"""
 {hoba}
     {bumba}playerprefs{bumba}: [
         {hoba}
@@ -38,7 +39,8 @@ class playerprefs:
         {hobas}
     ]
 {hobas}
-        """)
+        """
+        file.write(text)
         file.close()
     def getstring(self):
         with open(self.code+"prefs"+".json",) as f:
@@ -47,3 +49,38 @@ class playerprefs:
         for name in data["playerprefs"]:
             a = name[self.code]
         return a
+
+    def savebool(self, boolvalue:bool):
+        bumba = '"'
+        hoba = "{"
+        hobas = "}"
+        file = open(self.code+"prefs"+".json", "w")
+        def sucuk(bools:bool):
+            if bools == True:
+                return "True"
+            else:
+                return "False"
+        text = f"""
+{hoba}
+    {bumba}playerprefs{bumba}: [
+        {hoba}
+            {bumba}{self.code}{bumba}: {bumba}{sucuk(boolvalue)}{bumba}
+        {hobas}
+    ]
+{hobas}
+        """
+        file.write(text)
+        file.close()
+
+    def getbool(self):
+        with open(self.code+"prefs"+".json",) as f:
+            data = json.load(f)
+        a = ""
+        for name in data["playerprefs"]:
+            a = name[self.code]
+        def sck(bas):
+            if bas == "True":
+                return True
+            elif bas == "False":
+                return False
+        return sck(a)
