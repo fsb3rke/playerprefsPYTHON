@@ -7,3 +7,13 @@ playerprefsLib.playerprefs("ali").saveint(asd)
 print(playerprefsLib.playerprefs("ali").getint())
 abo:int = playerprefsLib.playerprefs("ali").getint()
 print(abo)
+bs = True
+ba = False
+playerprefsLib.playerprefs("bsa").savebool(bs)
+playerprefsLib.playerprefs("bas").savebool(ba)
+print(playerprefsLib.playerprefs("bsa").getbool())
+print(playerprefsLib.playerprefs("bas").getbool())
+bumba:bool = playerprefsLib.playerprefs("bsa").getbool()
+abmub:bool = playerprefsLib.playerprefs("bas").getbool()
+print(bumba)
+print(abmub)
