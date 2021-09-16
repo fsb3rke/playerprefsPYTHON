@@ -4,6 +4,10 @@
 <li>playerprefsLib.py file is module file</li>
 
 ## NEWS
+<div>NEW</div>
+added savefloat() function <br>
+added getfloat() function
+<div>OLD</div>
 added setbool() function <br>
 added getbool() function
 
@@ -32,6 +36,13 @@ playerprefsLib.playerprefs(STRING_KEY).getint() #returns key integer value
 playerprefsLib.playerprefs(STRING_KEY).savebool(BOOLEAN_VARIABLE)
 #get bool
 playerprefsLib.playerprefs(STRING_KEY).getbool() #returns key boolean value
+
+#float
+
+#save float 
+playerprefsLib.playerprefs(STRING_KEY).savefloat(FLOAT_VARIABLE)
+#get float
+playerprefsLib.playerprefs(STRING_KEY).getfloat() #returns key float value
 ```
 
 ## Contributing
