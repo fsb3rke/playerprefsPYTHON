@@ -4,7 +4,7 @@
 <li>playerprefsLib.py file is module file</li>
 
 ## NEWS
-added setbool() function
+added setbool() function <br>
 added getbool() function
 
 ## Usage
