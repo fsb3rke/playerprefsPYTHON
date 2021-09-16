@@ -3,6 +3,10 @@
 <li>main.py file is test file</li>
 <li>playerprefsLib.py file is module file</li>
 
+## NEWS
+added setbool() function
+added getbool() function
+
 ## Usage
 
 ```python
